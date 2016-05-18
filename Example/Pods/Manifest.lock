@@ -1,0 +1,16 @@
+PODS:
+  - Layitout (0.1.0)
+
+DEPENDENCIES:
+  - Layitout (from `../`)
+
+EXTERNAL SOURCES:
+  Layitout:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Layitout: b1fb1f232fa99923dfa1997ad3c927f7067f5d65
+
+PODFILE CHECKSUM: 7fa0c668f7992912d1d62d31facfc0e4de980a8f
+
+COCOAPODS: 1.0.0
