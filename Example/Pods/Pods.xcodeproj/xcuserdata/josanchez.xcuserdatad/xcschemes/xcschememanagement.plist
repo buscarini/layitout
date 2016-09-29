@@ -4,10 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Layitout.xcscheme_^#shared#^_</key>
+		<key>Layitout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Pods-Layitout_Example.xcscheme</key>
 		<dict>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>30DD7FD65F9B5DA95002CF47AE8F60F0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>5B0D375C8BF509ED9945597E1D0326BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E9D05DC06BFA5E64CA90FBFFA12A02F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F18097C9D256C93AD7AF018BF7B47468</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,5 +1,5 @@
 PODS:
-  - Layitout (0.1.0)
+  - Layitout (0.2.0)
 
 DEPENDENCIES:
   - Layitout (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Layitout: b1fb1f232fa99923dfa1997ad3c927f7067f5d65
+  Layitout: b6d3cead8a230e68a76696d9bcb6e5d61a0410a0
 
 PODFILE CHECKSUM: 7fa0c668f7992912d1d62d31facfc0e4de980a8f
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.1.0.beta.1
