@@ -59,13 +59,13 @@ public struct Layout {
 
 	}
 		
-	public static func equal(view1: UIView,view2 : UIView, attribute: NSLayoutAttribute, multiplier : CGFloat = 1, constant : CGFloat = 0, priority : UILayoutPriority = UILayoutPriorityRequired) -> NSLayoutConstraint {
+	public static func equal(_ view1: UIView,view2 : UIView, attribute: NSLayoutAttribute, multiplier : CGFloat = 1, constant : CGFloat = 0, priority : UILayoutPriority = UILayoutPriorityRequired) -> NSLayoutConstraint {
 		let constraint = NSLayoutConstraint(item: view1, attribute: attribute, relatedBy: .equal, toItem: view2, attribute: attribute, multiplier: multiplier, constant: constant)
 		constraint.priority = priority
 		return constraint
 	}
 
-	public static func equal(view : UIView, attribute: NSLayoutAttribute, constant : CGFloat, priority : UILayoutPriority = UILayoutPriorityRequired) -> NSLayoutConstraint {
+	public static func equal(_ view : UIView, attribute: NSLayoutAttribute, constant : CGFloat, priority : UILayoutPriority = UILayoutPriorityRequired) -> NSLayoutConstraint {
 		let constraint = NSLayoutConstraint(item: view, attribute: attribute, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: constant)
 		constraint.priority = priority
 		return constraint
