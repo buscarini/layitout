@@ -9,23 +9,23 @@
 import UIKit
 
 public struct Layout {
-	public static func fill(container: UIView, view : UIView, priority: UILayoutPriority = UILayoutPriorityRequired) {
-		Layout.fillH(container: container, view: view, priority: priority)
-		Layout.fillV(container: container, view: view, priority: priority)
+	public static func fill(container: UIView, view : UIView, priority: UILayoutPriority = UILayoutPriorityRequired, margins: UIEdgeInsets = UIEdgeInsets.zero) {
+		Layout.fillH(container: container, view: view, priority: priority, margins: margins)
+		Layout.fillV(container: container, view: view, priority: priority, margins: margins)
 	}
 	
-	public static func fillV(container: UIView, view : UIView, priority: UILayoutPriority = UILayoutPriorityRequired) {
+	public static func fillV(container: UIView, view : UIView, priority: UILayoutPriority = UILayoutPriorityRequired, margins: UIEdgeInsets = UIEdgeInsets.zero) {
 		let constraints : [NSLayoutConstraint]
 		
 		if #available(iOS 9.0, *) {
 			constraints = [
-				container.topAnchor.constraint(equalTo: view.topAnchor),
-				container.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+				container.topAnchor.constraint(equalTo: view.topAnchor, constant: margins.top),
+				container.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: margins.bottom)
 			]
 		} else {
 			constraints = [
-				NSLayoutConstraint(item: container, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 0),
-				NSLayoutConstraint(item: container, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
+				NSLayoutConstraint(item: container, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: margins.top),
+				NSLayoutConstraint(item: container, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: margins.bottom)
 			]
 		}
 		
@@ -36,18 +36,18 @@ public struct Layout {
 		container.addConstraints(constraints)
 	}
 
-	public static func fillH(container: UIView, view : UIView, priority: UILayoutPriority = UILayoutPriorityRequired) {
+	public static func fillH(container: UIView, view : UIView, priority: UILayoutPriority = UILayoutPriorityRequired, margins: UIEdgeInsets = UIEdgeInsets.zero) {
 		let constraints : [NSLayoutConstraint]
 		
 		if #available(iOS 9.0, *) {
 			constraints = [
-				container.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-				container.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+				container.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: margins.left),
+				container.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: margins.right)
 			]
 		} else {
 			constraints = [
-				NSLayoutConstraint(item: container, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 0),
-				NSLayoutConstraint(item: container, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0),
+				NSLayoutConstraint(item: container, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: margins.left),
+				NSLayoutConstraint(item: container, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: margins.right),
 			]
 		}
 		
