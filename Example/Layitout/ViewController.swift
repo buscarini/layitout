@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 		
 		let redView = UIView()
-		redView.backgroundColor = UIColor.red()
+		redView.backgroundColor = UIColor.red
 		redView.translatesAutoresizingMaskIntoConstraints = false
 		self.view.addSubview(redView)
 		Layout.fill(container: self.view, view: redView)
