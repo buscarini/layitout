@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E9D05DC06BFA5E64CA90FBFFA12A02F2"
+               BlueprintIdentifier = "4B996BE2D64AF574135FE46ED8328D9C"
                BuildableName = "Pods_Layitout_Tests.framework"
                BlueprintName = "Pods-Layitout_Tests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E9D05DC06BFA5E64CA90FBFFA12A02F2"
+            BlueprintIdentifier = "4B996BE2D64AF574135FE46ED8328D9C"
             BuildableName = "Pods_Layitout_Tests.framework"
             BlueprintName = "Pods-Layitout_Tests"
             ReferencedContainer = "container:Pods.xcodeproj">
